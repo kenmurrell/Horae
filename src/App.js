@@ -48,25 +48,34 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="frame">
-          <div className="title-container">
-            <Titles />
-          </div>
-          <div className="form-container">
-            <Form getWeather={this.getWeather}/>
-          </div>
-          <div className="output-container">
-            <Weather
-            temperature={this.state.temperature}
-            city={this.state.city}
-            country={this.state.country}
-            humidity={this.state.humidity}
-            wind={this.state.wind}
-            description={this.state.description}
-            error={this.state.error} />
+        <div className="main-background">
+          <div className="main-container">
+            <div className="col-xs-5 title-background">
+              <div className="title-container">
+                <Titles />
+              </div>
+            </div>
+            <div className="col-xs-7 form-background">
+              <div className="form-container">
+                <div className="input-form-container">
+                  <Form getWeather={this.getWeather}/>
+                </div>
+                <div className="output-form-container">
+                  <Weather
+                  temperature={this.state.temperature}
+                  city={this.state.city}
+                  country={this.state.country}
+                  humidity={this.state.humidity}
+                  wind={this.state.wind}
+                  description={this.state.description}
+                  error={this.state.error} />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
     );
   }
 }
