@@ -3,7 +3,7 @@ import React from 'react';
 
 const Titles = () => (
   <div>
-    <h1>Horae</h1>
+    <h1>Clima</h1>
     <p>The location-based weather app</p>
   </div>
 );
