@@ -34,8 +34,9 @@
 .title-container {
   align-items: center;
   text-align: center;
+  margin-bottom: 40%;
   justify-content: center;
-  color: #FFF;
+  color: #2c3e50;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -61,6 +62,16 @@
   color: #FFF;
 }
 
+.radio-container{
+  display: inline-block;
+}
+
+.radio-label{
+  color: #fff;
+  float: left;
+}
+
+
 input[type="text"] {
   background-color: transparent;
   color: #fff !important;
@@ -74,6 +85,12 @@ input[type="text"] {
   font-size: 18px;
 }
 
+input[type='radio'] {
+  clear: both;
+  float: left;
+
+}
+
 button {
   border: 0;
   padding: 6px 10px;
@@ -81,7 +98,7 @@ button {
   border-radius: 10px;
   font-size: 17px;
   cursor: pointer;
-  background-color: #0000FF;
+  background-color: #4682B4;
   color: #fff;
 }
 
